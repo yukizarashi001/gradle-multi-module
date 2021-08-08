@@ -1,0 +1,21 @@
+plugins {
+    id 'gradle.multi.project.java-common-conventions'
+    id 'org.springframework.boot' version '2.5.2'
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+}
+
+group = 'gradle.multi.project.domain'
+version = '0.0.1-SNAPSHOT'
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+bootJar {
+    enabled = false
+}
+
+jar {
+    enabled = true
+}

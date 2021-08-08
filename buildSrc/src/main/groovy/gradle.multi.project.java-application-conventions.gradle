@@ -1,0 +1,4 @@
+plugins {
+    id 'gradle.multi.project.java-common-conventions'
+    id 'application'
+}
